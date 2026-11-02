@@ -1,0 +1,119 @@
+# ==============================================================================
+# LedgerLens - .gitignore
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# Environment Variables & Secrets (CRITICAL: Never commit credentials)
+# ------------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.cert
+
+# ------------------------------------------------------------------------------
+# Python & Virtual Environments
+# ------------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# Distribution & packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# ------------------------------------------------------------------------------
+# Node.js & Next.js (Frontend)
+# ------------------------------------------------------------------------------
+frontend/node_modules/
+node_modules/
+.pnp
+.pnp.js
+
+# Next.js build output
+frontend/.next/
+.next/
+frontend/out/
+out/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ------------------------------------------------------------------------------
+# Uploaded Invoices & Local File Storage (Data Privacy & Storage)
+# ------------------------------------------------------------------------------
+uploads/
+backend/uploads/
+storage/
+temp/
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.webp
+# Keep directory placeholders if needed
+!backend/uploads/.gitkeep
+
+# ------------------------------------------------------------------------------
+# Database
+# ------------------------------------------------------------------------------
+*.sqlite3
+*.db
+
+# ------------------------------------------------------------------------------
+# Operating System & IDE Files
+# ------------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini
+
+# Editors
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+*.sublime-project
+*.sublime-workspace
+
